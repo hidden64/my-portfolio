@@ -17,15 +17,15 @@ export default function About() {
         <div className="text-center md:text-left md:w-2/3">
           <h2 className="text-3xl font-bold text-gray-800 mb-4">Qui suis-je ?</h2>
           <p className="text-gray-600 text-lg leading-relaxed">
-            Hello. Je m'appelle{" "}
+            Hello. Je m&apos;appelle{" "}
             <span className="font-semibold text-blue-600">Junias KOUTI</span>. <br />
-            Je suis passionné par l'informatique et les nouvelles technologies,
-            efficaces, modernes et surtout très utiles. J'adore apprendre, relever
+            Je suis passionné par l&apos;informatique et les nouvelles technologies,
+            efficaces, modernes et surtout très utiles. J&apos;adore apprendre, relever
             des défis techniques et transformer des idées en projets concrets. À
             travers ce portfolio, je vous présente un aperçu de mon parcours
-            académique et professionnel, ainsi que quelques projets concrets
-            que j'ai réalisés.
-          </p>
+            académique et professionnel ainsi que quelques projets concrets
+            que j&apos;ai réalisés.</p>
+
 
           
           <div className="mt-10 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6">
