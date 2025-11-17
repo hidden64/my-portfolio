@@ -1,37 +1,87 @@
 "use client";
 import { motion } from "framer-motion";
-import { Code2, ShieldCheck, Globe, Gamepad2 } from "lucide-react";
+import { Code2, ShieldCheck, Globe, Gamepad2, Server, Lock } from "lucide-react";
 
 export default function Projets() {
   const projets = [
+    // EPITECH
     {
-      titre: "Plateforme de Gestion Académique (Gestio)",
-      desc: "Développement d’une application web complète de gestion académique pour université (étudiants, enseignants, notes, emplois du temps).",
+      titre: "My-Marvin",
+      desc: "Projet DevOps avec mise en place de pipeline CI/CD, conteneurisation Docker et automatisation Jenkins.",
+      etablissement: "EPITECH",
+      statut: "À venir",
+      icon: <Server size={24} />,
+      couleur: "from-indigo-500 to-indigo-600",
+      tags: ["DevOps", "Docker", "Jenkins", "CI/CD"]
+    },
+    {
+      titre: "Redditech",
+      desc: "Application desktop utilisant OAuth2 et communication avec l'API REST de Reddit (JS, .Net, Java).",
+      etablissement: "EPITECH",
+      statut: "À venir",
+      icon: <Globe size={24} />,
+      couleur: "from-red-500 to-red-600",
+      tags: ["OAuth2", "API REST", "Desktop"]
+    },
+    {
+      titre: "Tower Defense - Jeu 2D",
+      desc: "Création d'un jeu Tower Defense en Java avec libgdx. Documentation avec UML et Doxygen.",
+      etablissement: "EPITECH",
+      statut: "En cours",
+      icon: <Gamepad2 size={24} />,
+      couleur: "from-orange-500 to-orange-600",
+      tags: ["Java", "libgdx", "UML", "Doxygen"]
+    },
+    {
+      titre: "Portfolio",
+      desc: "Plateforme web de mise en relation recruteurs/candidats et portfolio personnel.",
+      etablissement: "EPITECH",
+      statut: "Terminé",
+      icon: <Code2 size={24} />,
+      couleur: "from-green-500 to-green-600",
+      tags: ["Next.js", "TypeScript", "CSS", "Framer Motion"]
+    },
+
+    {
+      titre: "Jobboard",
+      desc: "Plateforme web de mise en relation recruteurs/candidats et portfolio personnel.",
+      etablissement: "EPITECH",
+      statut: "Terminé",
+      icon: <Code2 size={24} />,
+      couleur: "from-green-500 to-green-600",
+      tags: [ "Node.js", "MySQL", "Express"]
+    },
+    // IFRI
+
+    {
+      titre: "VPN Client-to-Site",
+      desc: "Projet de soutenance : mise en place d'un VPN avec GNS3, VMware. Configuration réseau avec protocoles IKEv2, IPsec, TLS.",
       etablissement: "IFRI",
-      icon: <Globe size={26} />,
-      couleur: "bg-blue-500",
+      statut: "Terminé",
+      icon: <Lock size={24} />,
+      couleur: "from-teal-500 to-teal-600",
+      tags: ["GNS3", "IKEv2", "IPsec", "Wireshark"]
     },
     {
-      titre: "Mise en place d’une PSSI",
-      desc: "Rédaction et déploiement d’une Politique de Sécurité du Système d’Information (PSSI) pour une université, assurant conformité et sécurité du SI.",
+      titre: "Proposition d'une PSSI de l'université",
+      desc: "Rédaction et déploiement d'une Politique de Sécurité du Système d'Information. Audit de sécurité selon référentiels EBIOS / ISO 27001.",
       etablissement: "IFRI",
-      icon: <ShieldCheck size={26} />,
-      couleur: "bg-green-500",
+      statut: "Terminé",
+      icon: <ShieldCheck size={24} />,
+      couleur: "from-green-600 to-green-700",
+      tags: ["EBIOS", "ISO 27001", "Audit"]
     },
     {
-      titre: "Projet Web : Jobboard & Portfolio",
-      desc: "Création d’une plateforme web moderne de mise en relation entre recruteurs et candidats, ainsi qu’un portfolio personnel interactif.",
-      etablissement: "EPITECH (en cours)",
-      icon: <Code2 size={26} />,
-      couleur: "bg-purple-500",
+      titre: "GESTIO",
+      desc: "Application web complète de gestion académique pour université : étudiants, enseignants, notes, emplois du temps.",
+      etablissement: "IFRI",
+      statut: "Terminé",
+      icon: <Globe size={24} />,
+      couleur: "from-blue-500 to-blue-600",
+      tags: ["PHP", "MySQL", "HTML", "CSS"]
     },
-    {
-      titre: "Projet Java : Jeu Vidéo 2D",
-      desc: "Développement d’un jeu vidéo 2D avec Java : gestion des collisions, animations et logique de gameplay.",
-      etablissement: "EPITECH (en cours)",
-      icon: <Gamepad2 size={26} />,
-      couleur: "bg-orange-500",
-    },
+    
+    
   ];
 
   const competences = [
@@ -46,80 +96,123 @@ export default function Projets() {
 
   return (
     <>
-    <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-6" id="projets">
-      <div className="max-w-6xl mx-auto">
-       
-        <h2 className="text-3xl font-bold text-gray-800 mb-16 text-center">
-          MES PROJETS REALISES & EN COURS DE REALISATION
-        </h2>
+      <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8" id="projets">
+        <div className="max-w-6xl mx-auto">
+          {/* Header */}
+          <motion.div
+            initial={{ opacity: 0, y: -20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-center mb-12"
+          >
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-3">
+              Mes Projets
+            </h2>
+            <div className="w-20 h-1 bg-blue-600 mx-auto rounded-full"></div>
+          </motion.div>
 
-      
-        <div className="relative border-l-4 border-blue-200 pl-8 space-y-12">
-          {projets.map((p, i) => (
-            <motion.div
-              key={i}
-              initial={{ opacity: 0, x: i % 2 === 0 ? -50 : 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, ease: "easeOut" }}
-              viewport={{ once: true }}
-              className={`relative flex flex-col md:flex-row items-start md:items-center gap-6 ${
-                i % 2 === 0 ? "md:pl-10" : "md:pl-0 md:pr-10"
-              }`}
-            >
-            
-              <div
-                className={`absolute -left-10 md:static md:translate-x-0 flex items-center justify-center w-12 h-12 ${p.couleur} text-white rounded-full shadow-md`}
-              >
-                {p.icon}
-              </div>
-
-           
-              <div className="bg-white border border-gray-200 rounded-2xl shadow-sm p-6 hover:shadow-md transition-all duration-300 md:w-3/4">
-                <h3 className="text-xl font-semibold text-blue-600 mb-2">
-                  {p.titre}
-                </h3>
-                <p className="text-sm text-gray-500 mb-2">{p.etablissement}</p>
-                <p className="text-gray-600 leading-relaxed text-sm">{p.desc}</p>
-              </div>
-            </motion.div>
-          ))}
-        </div>
-
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.7 }}
-          viewport={{ once: true }}
-          className="mt-20 text-center"
-        >
-          <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-             COMPETENCES TRANSVERSES
-          </h3>
-
-          <div className="flex flex-wrap justify-center gap-3">
-            {competences.map((c, i) => (
-              <span
+          {/* Grille de projets */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            {projets.map((p, i) => (
+              <motion.div
                 key={i}
-                className="bg-blue-100 text-blue-700 px-4 py-2 rounded-full text-sm font-medium hover:bg-blue-200 transition"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: i * 0.1 }}
+                viewport={{ once: true, margin: "-50px" }}
+                whileHover={{ y: -8 }}
+                className="group"
               >
-                {c}
-              </span>
+                <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 h-full flex flex-col border border-gray-100">
+                  {/* Header avec icône et statut */}
+                  <div className="flex items-start justify-between mb-4">
+                    <div className={`bg-gradient-to-br ${p.couleur} p-3 rounded-lg text-white shadow-md group-hover:scale-110 transition-transform duration-300`}>
+                      {p.icon}
+                    </div>
+                    <span className={`text-xs font-semibold px-3 py-1 rounded-full ${
+                      p.statut === "Terminé" ? "bg-green-100 text-green-700" :
+                      p.statut === "En cours" ? "bg-yellow-100 text-yellow-700" :
+                      "bg-gray-100 text-gray-600"
+                    }`}>
+                      {p.statut}
+                    </span>
+                  </div>
+
+                  {/* Titre et établissement */}
+                  <h3 className="text-lg font-bold text-gray-800 mb-1 group-hover:text-blue-600 transition-colors">
+                    {p.titre}
+                  </h3>
+                  <p className="text-sm font-medium text-gray-500 mb-3">{p.etablissement}</p>
+
+                  {/* Description */}
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4 flex-grow">
+                    {p.desc}
+                  </p>
+
+                  {/* Tags */}
+                  <div className="flex flex-wrap gap-2">
+                    {p.tags.map((tag, idx) => (
+                      <span
+                        key={idx}
+                        className="text-xs bg-gray-100 text-gray-700 px-2.5 py-1 rounded-md font-medium"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              </motion.div>
             ))}
           </div>
-        </motion.div>
-      </div>
 
-      
+          {/* Compétences transverses */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+            viewport={{ once: true }}
+            className="text-center bg-white rounded-2xl shadow-md p-8 border border-gray-100"
+          >
+            <h3 className="text-2xl sm:text-3xl font-bold text-gray-800 mb-6">
+              Compétences Transverses
+            </h3>
 
-    </section>
-    <div className="w-full text-center py-10">
-        <a href="#contact-section" className="inline-block bg-blue-600 text-white text-xl font-semibold py-4 px-8 rounded-xl shadow hover:bg-blue-700 transition">
-          Cliquer moi pour contacter Junias !
-        </a>
-      </div>
+            <div className="flex flex-wrap justify-center gap-3">
+              {competences.map((c, i) => (
+                <motion.span
+                  key={i}
+                  initial={{ opacity: 0, scale: 0.9 }}
+                  whileInView={{ opacity: 1, scale: 1 }}
+                  transition={{ duration: 0.3, delay: i * 0.05 }}
+                  viewport={{ once: true }}
+                  className="bg-blue-50 text-blue-700 px-4 py-2 rounded-lg text-sm font-semibold hover:bg-blue-600 hover:text-white transition-all cursor-default"
+                >
+                  {c}
+                </motion.span>
+              ))}
+            </div>
+          </motion.div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <motion.div
+        initial={{ opacity: 0, y: 20 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        viewport={{ once: true }}
+        className="w-full text-center py-12 bg-gray-50"
+      >
+        <motion.a
+          href="#contact-section"
+          whileHover={{ scale: 1.05 }}
+          whileTap={{ scale: 0.98 }}
+          className="inline-block bg-blue-600 text-white text-lg sm:text-xl font-semibold py-4 px-8 rounded-xl shadow-lg hover:bg-blue-700 transition-all"
+        >
+          Contacter Junias
+        </motion.a>
+      </motion.div>
     </>
-
-    
-    
   );
 }

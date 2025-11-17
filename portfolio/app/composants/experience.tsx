@@ -6,12 +6,12 @@ export default function Experience() {
     {
       entreprise: "Jehovah Nissi Petroleum (JNP SA)",
       lieu: "Cotonou, Bénin",
-      poste: "Administrateur système",
+      poste: "Assistant IT",
       date: "Mars 2024 - Octobre 2024",
       desc: [
-        "Gestion du parc informatique avec GLPI",
-        "Déploiement de solutions de virtualisation",
-        "Supervision et maintenance du réseau local",
+        "Maintenance et dépannage des systèmes informatiques et réseaux",
+        "Supervision et gestion du réseau local, configuration des routeurs",
+        "Contrôle et suivi des équipements techniques pour assurer leur disponibilité",
         "Configuration de routeurs et gestion de la sécurité réseau",
         "Gestion du système de visio-surveillance de 26 stations d’essence",
       ],
@@ -19,11 +19,13 @@ export default function Experience() {
     {
       entreprise: "NET2ALL",
       lieu: "Calavi, Bénin",
-      poste: "Assistant IT",
+      poste: "Administrateur système",
       date: "Septembre 2023 - Octobre 2023",
       desc: [
         "Déploiement et configuration d’équipements réseau et systèmes",
         "Support technique et contrôle des performances des installations",
+        "Gestion du parc informatique avec GLPI",
+        "Déploiement des solutions de virtualisation",
       ],
     },
     {
@@ -32,10 +34,10 @@ export default function Experience() {
       poste: "Technicien réseau et système (Stage professionnel)",
       date: "Novembre 2022 - Février 2023",
       desc: [
-        "Installation et maintenance d’équipements informatiques",
-        "Support technique et helpdesk",
-        "Assistance dans la configuration du pare-feu (Fortigate)",
-        "Suivi et contrôle du matériel pour assurer sa disponibilité",
+        "Déploiement et configuration d’équipements réseau et systèmes",
+        "Support technique et contrôle des performances des installations",
+        "Utilisation et configurations des hébergements avec Plesk",
+        "Connaissance et configuration du pare-feu (Pfsense)",
       ],
     },
     {
@@ -44,10 +46,10 @@ export default function Experience() {
       poste: "Stagiaire à la Direction des Systèmes d’Informations (DSI)",
       date: "Mai 2022 - Août 2022",
       desc: [
-        "Installation et maintenance d’équipements informatiques",
         "Support technique et helpdesk",
-        "Assistance dans la configuration du pare-feu (Fortigate)",
-        "Suivi et contrôle du matériel pour assurer sa disponibilité",
+        "Asistance au service technique, installation et maintenance d’équipements",
+        "Suivi et contrôle du matériel pour garantir leur disponibilité",
+        "Assistance dans le cadre de configuration du pare-feu (Fortigate)",
       ],
     },
   ];
@@ -57,7 +59,9 @@ export default function Experience() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
           EXPERIENCES PROFESSIONNELLES
+          {/* <div className="w-60 h-1 bg-blue-600 mx-auto rounded-full"></div> */}
         </h2>
+        
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {experiences.map((exp, i) => (
