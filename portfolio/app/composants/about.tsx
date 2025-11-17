@@ -28,7 +28,7 @@ export default function About() {
 
 
           
-          <div className="mt-10 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6">
+          <div id="contact-section" className="mt-10 bg-gray-50 border border-gray-200 rounded-2xl shadow-sm p-6">
             <h3 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
               Comment me contacter ?
             </h3>

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { Menu, X } from "lucide-react"; // iimport des icones pour la navbar sur tel
+import { Menu, X } from "lucide-react"; // import des icones pour la navbar sur tel
 import About from "./composants/about";
 import Formation from "./composants/formation";
 import Experience from "./composants/experience";
@@ -16,12 +16,12 @@ export default function HomePage() {
      
       <nav className="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50">
         <div className="max-w-6xl mx-auto px-6 py-3 flex justify-between items-center">
-          <h1 className="text-xl font-bold text-blue-600">Junias KOUTI</h1>
+          <h1 className="text-xl font-bold text-blue-600">Junias KOUTI<strong>.</strong></h1>
 
           
           <div className="hidden md:flex space-x-6 text-gray-700 font-medium">
             <a href="#about" className="hover:text-blue-600" onClick={closeMenu}>
-              À propos
+              À propos de moi
             </a>
             <a href="#formation" className="hover:text-blue-600" onClick={closeMenu}>
               Formations
@@ -49,16 +49,16 @@ export default function HomePage() {
           <div className="md:hidden bg-white shadow-md border-t border-gray-100">
             <div className="flex flex-col items-center py-4 space-y-4 text-gray-700 font-medium">
               <a href="#about" className="hover:text-blue-600" onClick={closeMenu}>
-                À propos
+                À PROPOS
               </a>
               <a href="#formation" className="hover:text-blue-600" onClick={closeMenu}>
-                Formations
+                FORMATIONS
               </a>
               <a href="#experience" className="hover:text-blue-600" onClick={closeMenu}>
-                Expériences
+                EXPERIENCES
               </a>
               <a href="#projets" className="hover:text-blue-600" onClick={closeMenu}>
-                Projets
+                PROJETS
               </a>
             </div>
           </div>

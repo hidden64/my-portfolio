@@ -56,7 +56,7 @@ export default function Experience() {
     <section className="bg-white py-16 px-6" id="experience">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
-          Expériences Professionnelles
+          EXPERIENCES PROFESSIONNELLES
         </h2>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

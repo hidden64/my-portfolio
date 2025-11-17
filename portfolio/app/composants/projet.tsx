@@ -45,11 +45,12 @@ export default function Projets() {
   ];
 
   return (
+    <>
     <section className="bg-gradient-to-b from-gray-50 to-white py-20 px-6" id="projets">
       <div className="max-w-6xl mx-auto">
        
         <h2 className="text-3xl font-bold text-gray-800 mb-16 text-center">
-          Mes Projets Réalisés
+          MES PROJETS REALISES & EN COURS DE REALISATION
         </h2>
 
       
@@ -92,7 +93,7 @@ export default function Projets() {
           className="mt-20 text-center"
         >
           <h3 className="text-2xl font-semibold text-gray-800 mb-6">
-             Compétences Transverses
+             COMPETENCES TRANSVERSES
           </h3>
 
           <div className="flex flex-wrap justify-center gap-3">
@@ -107,6 +108,18 @@ export default function Projets() {
           </div>
         </motion.div>
       </div>
+
+      
+
     </section>
+    <div className="w-full text-center py-10">
+        <a href="#contact-section" className="inline-block bg-blue-600 text-white text-xl font-semibold py-4 px-8 rounded-xl shadow hover:bg-blue-700 transition">
+          Cliquer moi pour contacter Junias !
+        </a>
+      </div>
+    </>
+
+    
+    
   );
 }
