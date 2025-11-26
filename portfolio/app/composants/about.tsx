@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail, MapPin, Phone, Linkedin } from "lucide-react";
+import { Mail, MapPin, Phone, Linkedin, Github } from "lucide-react";
 
 export default function About() {
   return (
@@ -33,7 +33,7 @@ export default function About() {
               Comment me contacter ?
             </h3>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-gray-700">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-gray-700">
               
               <div className="flex items-center gap-4 bg-white p-4 rounded-xl shadow hover:shadow-md transition-shadow">
                 <div className="p-3 bg-blue-100 text-blue-600 rounded-full">
@@ -79,6 +79,24 @@ export default function About() {
                     className="font-medium hover:text-blue-600"
                   >
                     Junias KOUTI
+                  </a>
+                </div>
+              </div>
+
+              {/* GitHub */}
+              <div className="flex items-center gap-4 bg-white p-4 rounded-xl shadow hover:shadow-md transition-shadow">
+                <div className="p-3 bg-blue-100 text-blue-600 rounded-full">
+                  <Github size={24} />
+                </div>
+                <div>
+                  <p className="text-sm text-gray-500">GitHub</p>
+                  <a
+                    href="https://github.com/hidden64"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="font-medium hover:text-blue-600"
+                  >
+                    hidden64
                   </a>
                 </div>
               </div>
