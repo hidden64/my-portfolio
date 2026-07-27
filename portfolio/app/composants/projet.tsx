@@ -4,32 +4,58 @@ import { Code2, ShieldCheck, Globe, Gamepad2, Server, Lock } from "lucide-react"
 
 export default function Projets() {
   const projets = [
-    // EPITECH
+    {
+      titre: "Tableau de bord décisionnel",
+      desc: "Conception d'un tableau de bord interactif à partir d'une base relationnelle: définition des indicateurs, requêtes d'agrégation et restitution graphique.",
+      etablissement: "Projet Personnel",
+      statut: "Terminé",
+      icon: <Globe size={24} />,
+      couleur: "from-blue-500 to-blue-600",
+      tags: ["SQL", "Excel", "Dataviz"]
+    },
+    {
+      titre: "Pipeline de préparation de données",
+      desc: "Chaîne d'extraction, transformation et chargement de données hétérogènes vers une base analytique: nettoyage, contrôles qualité et automatisation.",
+      etablissement: "Projet Personnel",
+      statut: "Terminé",
+      icon: <Server size={24} />,
+      couleur: "from-indigo-500 to-indigo-600",
+      tags: ["Python", "SQL", "PostgreSQL", "ETL"]
+    },
+    {
+      titre: "ETL Ventes Multi-Sites & Entrepôt Décisionnel",
+      desc: "Chaîne ETL alimentant un entrepôt en schéma en étoile depuis des sources hétérogènes: nettoyage, dédoublonnage, gestion des rejets et chargement incrémental.",
+      etablissement: "Projet Personnel",
+      statut: "Terminé",
+      icon: <Code2 size={24} />,
+      couleur: "from-green-500 to-green-600",
+      tags: ["Talend", "SQL", "PostgreSQL", "Data Warehouse"]
+    },
     {
       titre: "My-Marvin",
       desc: "Projet DevOps avec mise en place de pipeline CI/CD, conteneurisation Docker et automatisation Jenkins.",
       etablissement: "EPITECH",
-      statut: "À venir",
+      statut: "Terminé",
       icon: <Server size={24} />,
-      couleur: "from-indigo-500 to-indigo-600",
+      couleur: "from-green-500 to-green-600",
       tags: ["DevOps", "Docker", "Jenkins", "CI/CD"]
     },
     {
-      titre: "Redditech",
-      desc: "Application desktop utilisant OAuth2 et communication avec l'API REST de Reddit (JS, .Net, Java).",
+      titre: "Bleep",
+      desc: "App type Discord : serveurs, channels, rôles (Owner/Admin/Member), REST API et persistance des données avec PostgreSQL (Node.js · Next.js · Socket.IO)",
       etablissement: "EPITECH",
-      statut: "À venir",
+      statut: "Terminé",
       icon: <Globe size={24} />,
-      couleur: "from-red-500 to-red-600",
+      couleur: "from-green-500 to-green-600",
       tags: ["OAuth2", "API REST", "Desktop"]
     },
     {
       titre: "Tower Defense - Jeu 2D",
       desc: "Création d'un jeu Tower Defense en Java avec libgdx. Documentation avec UML et Doxygen.",
       etablissement: "EPITECH",
-      statut: "En cours",
+      statut: "Terminé",
       icon: <Gamepad2 size={24} />,
-      couleur: "from-orange-500 to-orange-600",
+      couleur: "from-green-500 to-green-600",
       tags: ["Java", "libgdx", "UML", "Doxygen"]
     },
     {
@@ -41,7 +67,6 @@ export default function Projets() {
       couleur: "from-green-500 to-green-600",
       tags: ["Next.js", "TypeScript", "CSS", "Framer Motion"]
     },
-
     {
       titre: "Jobboard",
       desc: "Plateforme web de mise en relation recruteurs/candidats et portfolio personnel.",
@@ -49,10 +74,8 @@ export default function Projets() {
       statut: "Terminé",
       icon: <Code2 size={24} />,
       couleur: "from-green-500 to-green-600",
-      tags: [ "Node.js", "MySQL", "Express"]
+      tags: ["Node.js", "MySQL", "Express"]
     },
-    // IFRI
-
     {
       titre: "VPN Client-to-Site",
       desc: "Projet de soutenance : mise en place d'un VPN avec GNS3, VMware. Configuration réseau avec protocoles IKEv2, IPsec, TLS.",
@@ -80,8 +103,6 @@ export default function Projets() {
       couleur: "from-blue-500 to-blue-600",
       tags: ["PHP", "MySQL", "HTML", "CSS"]
     },
-    
-    
   ];
 
   const competences = [
@@ -96,7 +117,7 @@ export default function Projets() {
 
   return (
     <>
-      <section className="bg-gradient-to-b from-gray-50 to-white py-16 px-4 sm:px-6 lg:px-8" id="projets">
+      <section className="bg-gradient-to-b from-gray-50 to-white py-12 px-4 sm:px-5 lg:px-6" id="projets">
         <div className="max-w-6xl mx-auto">
           {/* Header */}
           <motion.div
@@ -104,7 +125,7 @@ export default function Projets() {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
             viewport={{ once: true }}
-            className="text-center mb-12"
+            className="text-center mb-8"
           >
             <h2 className="text-3xl sm:text-4xl font-bold text-gray-800 mb-3">
               Mes Projets
@@ -113,7 +134,7 @@ export default function Projets() {
           </motion.div>
 
           {/* Grille de projets */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
             {projets.map((p, i) => (
               <motion.div
                 key={i}
@@ -124,7 +145,7 @@ export default function Projets() {
                 whileHover={{ y: -8 }}
                 className="group"
               >
-                <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-6 h-full flex flex-col border border-gray-100">
+                <div className="bg-white rounded-xl shadow-md hover:shadow-xl transition-all duration-300 p-5 h-full flex flex-col border border-gray-100">
                   {/* Header avec icône et statut */}
                   <div className="flex items-start justify-between mb-4">
                     <div className={`bg-gradient-to-br ${p.couleur} p-3 rounded-lg text-white shadow-md group-hover:scale-110 transition-transform duration-300`}>

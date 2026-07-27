@@ -15,15 +15,15 @@ export default function Formation() {
   ];
 
   return (
-    <section className="bg-gray-50 py-16 px-6">
+    <section className="bg-gray-50 py-12 px-5">
       <div className="max-w-5xl mx-auto text-center">
-        <h2 className="text-3xl font-bold text-gray-800 mb-10">FORMATIONS</h2>
+        <h2 className="text-3xl font-bold text-gray-800 mb-8">FORMATIONS</h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
+        <div className="grid md:grid-cols-2 gap-6">
           {formations.map((f, i) => (
             <div
               key={i}
-              className="bg-white p-6 rounded-xl shadow hover:shadow-md transition"
+              className="bg-white p-5 rounded-xl shadow hover:shadow-md transition"
             >
               <a
                 href={f.lien}

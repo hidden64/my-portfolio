@@ -4,6 +4,7 @@ import { Menu, X } from "lucide-react"; // import des icones pour la navbar sur 
 import About from "./composants/about";
 import Formation from "./composants/formation";
 import Experience from "./composants/experience";
+import Competences from "./composants/competences";
 import Projets from "./composants/projet";
 
 export default function HomePage() {
@@ -26,6 +27,9 @@ export default function HomePage() {
             </a>
             <a href="#formation" className="hover:text-blue-600" onClick={closeMenu}>
               Formations
+            </a>
+            <a href="#competences" className="hover:text-blue-600" onClick={closeMenu}>
+              Compétences
             </a>
             <a href="#experience" className="hover:text-blue-600" onClick={closeMenu}>
               Expériences
@@ -55,6 +59,9 @@ export default function HomePage() {
               <a href="#formation" className="hover:text-blue-600" onClick={closeMenu}>
                 FORMATIONS
               </a>
+              <a href="#competences" className="hover:text-blue-600" onClick={closeMenu}>
+                COMPÉTENCES
+              </a>
               <a href="#experience" className="hover:text-blue-600" onClick={closeMenu}>
                 EXPERIENCES
               </a>
@@ -67,12 +74,15 @@ export default function HomePage() {
       </nav>
 
      
-      <div className="pt-24 space-y-32">
+      <div className="pt-24 space-y-20">
         <section id="about">
           <About />
         </section>
         <section id="formation">
           <Formation />
+        </section>
+        <section id="competences">
+          <Competences />
         </section>
         <section id="experience">
           <Experience />
@@ -83,8 +93,8 @@ export default function HomePage() {
       </div>
 
       
-      <footer className="mt-20 bg-gray-900 text-gray-200 text-center py-6">
-        <p>© Junias KOUTI 2025 — Tous droits réservés.</p>
+      <footer className="mt-16 bg-gray-900 text-gray-200 text-center py-5">
+        <p>© Junias K. 2026 - Tous droits réservés.</p>
       </footer>
     </main>
   );

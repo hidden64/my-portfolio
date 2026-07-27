@@ -4,40 +4,47 @@ import { Briefcase } from "lucide-react";
 export default function Experience() {
   const experiences = [
     {
-      entreprise: "Jehovah Nissi Petroleum (JNP SA)",
+      entreprise: "EPITECH, Établissement d'enseignement supérieur",
+      lieu: "Rennes, France",
+      poste: "Développeur informatique (stage)",
+      date: "Avril 2026 - Juillet 2026",
+      desc: [
+        "Développement d'une plateforme d'analyse: conception d'API et intégration de sources de données",
+        "Automatisation des traitements en Python",
+        "Agrégation et exploitation de volumes de logs pour produire des indicateurs de supervision",
+        "Rédaction de rapports techniques documentés",
+      ],
+    },
+    {
+      entreprise: "Jehovah Nissi Petroleum",
       lieu: "Cotonou, Bénin",
-      poste: "Assistant IT",
+      poste: "Chargé de données & reporting ERP",
       date: "Mars 2024 - Octobre 2024",
       desc: [
-        "Maintenance et dépannage des systèmes informatiques et réseaux",
-        "Supervision et gestion du réseau local, configuration des routeurs",
-        "Contrôle et suivi des équipements techniques pour assurer leur disponibilité",
-        "Configuration de routeurs et gestion de la sécurité réseau",
-        "Gestion du système de visio-surveillance de 26 stations d’essence",
+        "Déploiement et administration de l'ERP Odoo: structuration des données et paramétrage des flux",
+        "Extractions et requêtes SQL pour produire des tableaux de suivi d'activité multi-sites (ventes, stocks, parc)",
+        "Fiabilisation et contrôle des données: détection d'anomalies, correction et harmonisation",
+        "Recueil des besoins des équipes terrain et restitution d'indicateurs décisionnels sous Excel",
       ],
     },
     {
       entreprise: "NET2ALL",
       lieu: "Calavi, Bénin",
-      poste: "Administrateur système",
+      poste: "Développeur & Administrateur SI",
       date: "Septembre 2023 - Octobre 2023",
       desc: [
-        "Déploiement et configuration d’équipements réseau et systèmes",
-        "Support technique et contrôle des performances des installations",
-        "Gestion du parc informatique avec GLPI",
-        "Déploiement des solutions de virtualisation",
+        "Déploiement d'infrastructures et scripting d'automatisation",
+        "Exploitation des données d'inventaire via GLPI (extractions et reporting)",
       ],
     },
     {
       entreprise: "TECHNODATA SOLUTIONS",
       lieu: "Cotonou, Bénin",
-      poste: "Technicien réseau et système (Stage professionnel)",
+      poste: "Développeur & Technicien SI (stage)",
       date: "Novembre 2022 - Février 2023",
       desc: [
-        "Déploiement et configuration d’équipements réseau et systèmes",
-        "Support technique et contrôle des performances des installations",
-        "Utilisation et configurations des hébergements avec Plesk",
-        "Connaissance et configuration du pare-feu (Pfsense)",
+        "Développement de scripts d'automatisation",
+        "Configuration d'équipements et gestion des hébergements web (Plesk)",
       ],
     },
     {
@@ -55,9 +62,9 @@ export default function Experience() {
   ];
 
   return (
-    <section className="bg-white py-16 px-6" id="experience">
+    <section className="bg-white py-12 px-5" id="experience">
       <div className="max-w-6xl mx-auto">
-        <h2 className="text-3xl font-bold text-gray-800 mb-12 text-center">
+        <h2 className="text-3xl font-bold text-gray-800 mb-8 text-center">
           EXPERIENCES PROFESSIONNELLES
           {/* <div className="w-60 h-1 bg-blue-600 mx-auto rounded-full"></div> */}
         </h2>
@@ -67,7 +74,7 @@ export default function Experience() {
           {experiences.map((exp, i) => (
             <div
               key={i}
-              className="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 p-6 flex flex-col"
+              className="bg-gray-50 border border-gray-200 rounded-2xl shadow-sm hover:shadow-md transition-all duration-300 p-5 flex flex-col"
             >
               <div className="flex items-center gap-3 mb-4">
                 <div className="p-3 bg-blue-100 text-blue-600 rounded-full">

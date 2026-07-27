@@ -4,8 +4,11 @@ import { Inter } from "next/font/google";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Portfolio – Junias KOUTI",
+  title: "Junias K.",
   description: "Portfolio personnel de Junias KOUTI – Développeur et administrateur systèmes et réseaux.",
+  icons: [
+    { rel: "icon", url: "/myfavion.svg", type: "image/svg+xml" },
+  ],
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
