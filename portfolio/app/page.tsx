@@ -75,19 +75,19 @@ export default function HomePage() {
 
      
       <div className="pt-24 space-y-20">
-        <section id="about">
+        <section id="about" className="scroll-mt-20">
           <About />
         </section>
-        <section id="formation">
+        <section id="formation" className="scroll-mt-20">
           <Formation />
         </section>
-        <section id="competences">
+        <section id="competences" className="scroll-mt-20">
           <Competences />
         </section>
-        <section id="experience">
+        <section id="experience" className="scroll-mt-20">
           <Experience />
         </section>
-        <section id="projet">
+        <section id="projets" className="scroll-mt-20">
           <Projets />
         </section>
       </div>
