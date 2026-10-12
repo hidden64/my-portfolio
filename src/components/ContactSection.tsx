@@ -72,7 +72,7 @@ mQGNBF+v45EBDAC1l982sKq1bC728JkE92837482910293847291029384729102
             </div>
 
             <p className="font-body text-sm text-[#bbcabe] leading-relaxed">
-              {t.contact.direct === 'DIRECT COMMUNICATION CHANNEL' ? 'Currently looking for a work-study opportunity (SOC Analyst, Cloud Security Engineer or DFIR). Feel free to contact me to discuss your technical needs.' : "Actuellement à la recherche d'une opportunité en alternance (Analyste SOC, Ingénieur Sécurité Cloud ou DFIR). N'hésitez pas à me contacter pour échanger sur vos besoins techniques."}
+              {t.contact.direct === 'DIRECT COMMUNICATION CHANNEL' ? 'Currently looking for a work-study opportunity (Systems & Network Administrator, SOC Analyst or Cybersecurity Engineer). Feel free to contact me to discuss your technical needs.' : "Actuellement à la recherche d'une opportunité en alternance (Administrateur Systèmes & Réseaux, Analyste SOC ou Ingénieur Cybersécurité). N'hésitez pas à me contacter pour échanger sur vos besoins techniques."}
             </p>
 
             <div className="p-3 bg-[#161d18] border border-[#3c4a41] rounded flex items-center justify-between">
@@ -96,7 +96,7 @@ mQGNBF+v45EBDAC1l982sKq1bC728JkE92837482910293847291029384729102
                 <span>{t.contact.availability}</span>
               </div>
               <div className="text-[#859489] text-[11px]">
-                {t.contact.direct === 'DIRECT COMMUNICATION CHANNEL' ? 'Adaptable work-study schedule (e.g. 3 days company / 2 days school or 1 week / 1 week).' : 'Rythme alternance adaptable (ex: 3j entreprise / 2j école ou 1 sem / 1 sem).'}
+                {t.contact.direct === 'DIRECT COMMUNICATION CHANNEL' ? 'Work-study schedule: 6 weeks company / 2 weeks school. Available immediately.' : 'Rythme alternance : 6 semaines entreprise / 2 semaines école. Disponible immédiatement.'}
               </div>
             </div>
           </div>
@@ -195,7 +195,7 @@ mQGNBF+v45EBDAC1l982sKq1bC728JkE92837482910293847291029384729102
                   rows={4}
                   value={message}
                   onChange={(e) => setMessage(e.target.value)}
-                  placeholder={t.contact.direct === 'DIRECT COMMUNICATION CHANNEL' ? 'Role details, proposed assignments (SOC Analyst, SIEM, Cloud IR) or a simple introduction...' : 'Détails du poste, missions proposées (Analyste SOC, SIEM, Cloud IR) ou prise de contact...'}
+                  placeholder={t.contact.direct === 'DIRECT COMMUNICATION CHANNEL' ? 'Role details, proposed assignments (Sysadmin, Network, Cybersecurity) or a simple introduction...' : 'Détails du poste, missions proposées (Admin Sys/Réseaux, Cybersécurité) ou prise de contact...'}
                   className="w-full bg-[#161d18] border border-[#3c4a41] rounded px-3 py-2 font-mono text-xs text-[#dce5dc] outline-none focus:border-[#61f9b1] transition-colors resize-none"
                 />
               </div>

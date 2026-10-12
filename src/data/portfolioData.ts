@@ -4,182 +4,154 @@ export const PROFILE_DATA = {
   name: 'Junias',
   sysId: 'JUNIAS_SEC',
   idNum: '0x4A756E',
-  headline: 'Analyste SOC & Passionné de Sécurité Cloud',
+  headline: 'Systèmes, Réseaux & Cybersécurité',
   heroTagline: 'Sécuriser le Présent, Anticiper les Menaces.',
-  bio: "Spécialisé dans la détection des menaces, l'analyse d'artefacts et l'automatisation de la réponse aux incidents au sein d'environnements hybrides et cloud. Je combine une rigueur d'ingénierie Blue Team et des connaissances offensives (Red Team) pour durcir les périmètres critiques.",
-  operationalProfile: "Face à l'évolution constante des menaces cloud et hybrides, je me positionne en tant qu'analyste de première ligne. Mon objectif est de réduire la surface d'attaque et de minimiser le MTTR (Mean Time To Respond). J'opère quotidiennement sur des SIEM de pointe, analysant des logs hétérogènes pour isoler les comportements anormaux, de l'escalade de privilèges aux exfiltrations discrètes.",
-  location: 'Paris, FR',
-  clearance: 'Level 2 (Habilité Confidentiel)',
-  status: 'Disponible en Alternance (Rythme flexible)',
-  formation: 'Master Cybersécurité (En cours)',
-  specialisation: 'Cloud Security & DFIR',
+  bio: "Étudiant en Master of Science Cybersécurité à Epitech, avec deux ans de terrain entre l'administration d'infrastructures multi-sites, le support IT et un centre opérationnel de sécurité. Convaincu qu'un système bien protégé est d'abord un système bien connu, et que la sécurité tient autant aux utilisateurs qu'aux outils.",
+  operationalProfile: "Fort de deux ans d'expérience en administration systèmes et réseaux, j'ai géré des infrastructures allant d'un réseau de 26 sites à la mise en place d'une plateforme SOC. Mon approche allie rigueur technique et pédagogie : sécuriser les systèmes, superviser les alertes, et accompagner les utilisateurs dans les bonnes pratiques. Je cherche une alternance pour approfondir mes compétences en cybersécurité au sein d'une équipe opérationnelle.",
+  location: 'Rennes, FR',
+  clearance: 'Non classifié',
+  status: 'Disponible en Alternance (6 sem. entreprise / 2 sem. école)',
+  formation: 'Master Cybersécurité, Epitech Rennes (En cours)',
+  specialisation: 'Systèmes, Réseaux & Cybersécurité',
   certifications: [
-    { name: 'eJPTv2 (eLearnSecurity Junior Penetration Tester)', status: 'Obtenu / Validé' },
-    { name: 'CompTIA Security+ (SY0-701)', status: 'En cours de validation' },
-    { name: 'AWS Certified Security - Specialty', status: 'En préparation' }
+    { name: 'DefHack 2026 — COMCYBER', status: 'Participant' },
+    { name: 'Hack The Box — Profil actif', status: 'En cours' },
+    { name: 'Root-Me — Profil actif', status: 'En cours' }
   ],
   avatarUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuC0FCvHY3EjGDmUxpafT1hENIAuZjvAfqvPjxWJap5wiYwzmbPGmgu9Dvsv0gZYp00bf4KoFhLXA9CIW9dCvTBuPYeZLzgDw2-04Cly7GHUjQrIkrfstRgOo0tpHfIq9sWqGhLJfVXg6UU_l1IvEbngK1EhBXDAKBzyl3ClcSugSJZjJzp59uBdSBdmN5LhWb5Zxo3fhr12bNUee7EM9o0Q0yxrkC_aI_cgI32v8Yt5wowHZQR4pvT8',
   email: 'duarinali@gmail.com',
   github: 'https://github.com',
   tryhackme: 'https://tryhackme.com',
   rootme: 'https://root-me.org',
-  linkedin: 'https://linkedin.com',
+  linkedin: 'https://linkedin.com/in/junias-kouti',
   stats: {
-    ctfSolved: '180+',
-    siemRules: '45+',
-    incidentsAnalyzed: '200+',
-    uptime: '99.9%'
+    ctfSolved: '2+ ans',
+    siemRules: '26 sites',
+    incidentsAnalyzed: '4 postes',
+    uptime: 'MSc'
   }
 };
 
 export const PROJECTS_DATA: Project[] = [
   {
-    id: 'siem-distribue',
+    id: 'plateforme-soc',
     code: 'PROJET_ALPHA',
-    title: 'Déploiement SIEM Distribué & Ingestion Multi-Source',
+    title: 'Mise en Place d\'une Plateforme SOC',
     category: 'siem',
     categoryLabel: 'SIEM & SOC',
-    date: '2023-Q4',
-    summary: "Architecture et mise en place d'une stack ELK / Wazuh pour la centralisation, le parsing et l'analyse de logs d'une infrastructure cloud hybride.",
-    description: "Conception complète d'un pipeline d'ingestion de télémétrie sécurisé. Déploiement d'agents Fleet/Elastic-Agent et Wazuh sur des endpoints Linux, Windows Server et conteneurs. Corrélation d'événements Sysmon et audits Linux contre les tactiques MITRE ATT&CK.",
+    date: '2026-Q2',
+    summary: "Déploiement des services d'une plateforme SOC : conteneurisation, intégration des composants SIEM et mise en service opérationnelle.",
+    description: "Conception et déploiement d'une plateforme de supervision de sécurité dans le cadre d'un stage chez Epitech. Conteneurisation des services avec Docker, intégration des composants SIEM, supervision des alertes, analyse de journaux et traitement des incidents. Automatisation de tâches d'analyse en Python.",
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5RDQO7D68kD4gsf0RWLr0El5vfipx5O5Ej3IgeWRWAWrl8yLkBVFednJ6S-NcC56m8jUH2DUAMG7rbWKzbg2TN96sogkaicgQDcQqpQHwDUU7AHuQguxVHYymaY5AQVJnyMAq5mt3x3YCEsDj6sRLK1AyDO7QX9dEhB9m1VUvN7zIVU1hAuYY0QvI0_mWwd-Ie4BkZVjI-1xy3q-jouMNPOQe4IEnAPIkvGW6D5mVGJERBISBR-Db',
-    imageAlt: 'Visualisation de données et tableau de bord réseau en temps réel',
-    tags: ['Elasticsearch', 'Kibana', 'Logstash', 'Wazuh', 'Sysmon', 'Sigma Rules'],
+    imageAlt: 'Plateforme SOC avec tableau de bord de supervision',
+    tags: ['Docker', 'Python', 'SIEM', 'ELK', 'Snort', 'Automatisation'],
     metrics: [
-      { label: 'Volume journalier', value: '45 Go/jour' },
-      { label: 'Temps de détection (MTTD)', value: '< 90 sec' },
-      { label: 'Règles déployées', value: '38 règles' }
+      { label: 'Services conteneurisés', value: '6 conteneurs' },
+      { label: 'Durée du projet', value: '4 mois' },
+      { label: 'Scripts d\'automatisation', value: '8 scripts Python' }
     ],
     architecture: [
-      'Ingestion via Beats & Logstash avec enrichissement GeoIP et Threat Intel feeds (MISP)',
-      'Indexation dans cluster Elasticsearch 3 nœuds avec rétention tiered',
-      'Dashboards Kibana personnalisés pour analyste L1/L2 avec alertes webhook Discord/Slack',
-      'Mapping exhaustif des détections sur le framework MITRE ATT&CK (T1059, T1078, T1047)'
+      'Conteneurisation des services SOC avec Docker et Docker Compose pour un déploiement reproductible',
+      'Intégration des composants SIEM (collecte, indexation, visualisation) pour la centralisation des logs',
+      'Supervision des alertes et analyse de journaux pour le traitement des incidents de sécurité',
+      'Automatisation des tâches récurrentes d\'analyse et de reporting en Python'
     ],
     detectionRule: {
       type: 'Sigma',
-      title: 'Suspicious PowerShell Encoded Download Cradle',
-      code: `title: Suspicious PowerShell Encoded Download
-status: production
-description: Detects encoded base64 payload execution downloading remote payload
+      title: 'Détection de connexion SSH suspecte hors horaires',
+      code: `title: Suspicious Off-Hours SSH Login
+status: test
+description: Détecte les connexions SSH réussies en dehors des horaires de bureau
 logsource:
-  category: process_creation
-  product: windows
+  category: authentication
+  product: linux
 detection:
   selection:
-    Image|endswith: '\\powershell.exe'
-    CommandLine|contains:
-      - ' -enc '
-      - ' -EncodedCommand '
-      - 'DownloadString'
-      - 'IEX'
-  condition: selection
-level: high
+    EventType: 'sshd'
+    Action: 'Accepted'
+  timeframe:
+    - hours: '0-6'
+    - hours: '20-23'
+  condition: selection AND timeframe
+level: medium
 tags:
-  - attack.execution
-  - attack.t1059.001`
+  - attack.initial_access
+  - attack.t1078`
     },
     githubUrl: 'https://github.com'
   },
   {
-    id: 'cloud-soar-aws',
+    id: 'pssi-ebios',
     code: 'PROJET_BETA',
-    title: 'Automatisation SOAR & Réponse Incident AWS Serverless',
-    category: 'cloud',
-    categoryLabel: 'Sécurité Cloud',
-    date: '2024-Q1',
-    summary: 'Pipeline automatisé de confinement des menaces cloud basé sur AWS GuardDuty, EventBridge, Lambda et AWS WAF.',
-    description: 'Automatisation de la remédiation en temps réel lors de compromissions identifiées sur AWS. Lors d’un événement GuardDuty à haute sévérité (ex: clé IAM compromise ou communication C2), une Step Function isole instantanément l’instance EC2 et révoque les sessions IAM.',
+    title: 'PSSI et Analyse de Risque EBIOS RM',
+    category: 'governance',
+    categoryLabel: 'Gouvernance & Conformité',
+    date: '2025-Q4',
+    summary: "Audit complet et rédaction d'une politique de sécurité des systèmes d'information selon la méthode EBIOS RM et la norme ISO 27001.",
+    description: "Réalisation d'une analyse de risque complète selon la méthodologie EBIOS RM sur un système d'information cible. Identification des biens essentiels, cartographie des menaces, évaluation des scénarios de risque et rédaction d'un plan de traitement avec mesures argumentées auprès des décideurs.",
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5RDQO7D68kD4gsf0RWLr0El5vfipx5O5Ej3IgeWRWAWrl8yLkBVFednJ6S-NcC56m8jUH2DUAMG7rbWKzbg2TN96sogkaicgQDcQqpQHwDUU7AHuQguxVHYymaY5AQVJnyMAq5mt3x3YCEsDj6sRLK1AyDO7QX9dEhB9m1VUvN7zIVU1hAuYY0QvI0_mWwd-Ie4BkZVjI-1xy3q-jouMNPOQe4IEnAPIkvGW6D5mVGJERBISBR-Db',
-    imageAlt: 'Architecture de sécurité cloud et réponse incident AWS',
-    tags: ['AWS GuardDuty', 'EventBridge', 'AWS Lambda', 'Python', 'Terraform', 'KMS'],
+    imageAlt: 'Matrice de risques et cartographie EBIOS RM',
+    tags: ['EBIOS RM', 'ISO 27001', 'Analyse de risque', 'PSSI', 'Gouvernance', 'Conformité'],
     metrics: [
-      { label: 'Temps de confinement', value: '< 4 sec' },
-      { label: 'Faux positifs', value: '< 1.2%' },
-      { label: 'Couverture Cloud', value: 'Multi-Region' }
+      { label: 'Scénarios de risque', value: '15 identifiés' },
+      { label: 'Mesures de sécurité', value: '22 proposées' },
+      { label: 'Couverture Annexe A', value: 'ISO 27001' }
     ],
     architecture: [
-      'Surveillance continue des flux VPC Flow Logs, DNS Logs et CloudTrail par GuardDuty',
-      'EventBridge filtre et route les événements vers des fonctions AWS Lambda sécurisées',
-      'Isolation réseau via Security Groups de quarantaine et snapshots EBS automatiques pour analyse forensic',
-      'Notification chiffrée SNS vers l’équipe astreinte SOC avec rapport d’investigation généré'
+      'Identification et classification des biens essentiels et biens support du système d\'information',
+      'Cartographie des sources de menaces et des événements redoutés selon la méthode EBIOS RM',
+      'Évaluation de la vraisemblance et de la gravité des scénarios de risque',
+      'Rédaction de la PSSI et du plan de traitement des risques avec arbitrage des mesures auprès des décideurs'
     ],
-    detectionRule: {
-      type: 'KQL',
-      title: 'CloudTrail Anomalous IAM Privilege Escalation',
-      code: `AWSCloudTrail
-| where EventName in ("AttachUserPolicy", "PutUserPolicy", "CreateAccessKey")
-| where UserIdentityType != "AssumedRole"
-| summarize count() by UserIdentityArn, bin(TimeGenerated, 5m), ClientIPAddress
-| where count_ > 3
-| project TimeGenerated, UserIdentityArn, ClientIPAddress, count_`
-    },
     githubUrl: 'https://github.com'
   },
   {
-    id: 'dfir-malware-sandbox',
+    id: 'vpn-client-to-site',
     code: 'PROJET_GAMMA',
-    title: 'Plateforme DFIR & Analyse Dynamique de Malwares',
-    category: 'dfir',
-    categoryLabel: 'DFIR & Forensics',
-    date: '2024-Q2',
-    summary: 'Laboratoire d’investigation numérique isolé pour l’analyse statique/dynamique d’échantillons malveillants et l’extraction d’IOCs.',
-    description: 'Mise en œuvre d’un environnement sécurisé basé sur Cuckoo/CAPEv2 et FlareVM avec passerelle Tor/INetSim pour émuler les services Internet. Extraction automatisée de hashes, clés de registre modifiées, requêtes DNS suspectes et génération de règles YARA.',
+    title: 'VPN Client-to-Site & Analyse de Trafic Réseau',
+    category: 'network',
+    categoryLabel: 'Réseau & Infrastructure',
+    date: '2025-Q3',
+    summary: "Mise en place d'un accès distant chiffré IKEv2/IPsec en environnement virtualisé GNS3, avec routage et analyse de trafic Wireshark.",
+    description: "Conception et déploiement d'une architecture VPN client-to-site dans un environnement réseau simulé sous GNS3. Configuration du protocole IKEv2/IPsec, mise en place du routage inter-sites et analyse du trafic chiffré avec Wireshark pour valider l'intégrité et la confidentialité des échanges.",
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5RDQO7D68kD4gsf0RWLr0El5vfipx5O5Ej3IgeWRWAWrl8yLkBVFednJ6S-NcC56m8jUH2DUAMG7rbWKzbg2TN96sogkaicgQDcQqpQHwDUU7AHuQguxVHYymaY5AQVJnyMAq5mt3x3YCEsDj6sRLK1AyDO7QX9dEhB9m1VUvN7zIVU1hAuYY0QvI0_mWwd-Ie4BkZVjI-1xy3q-jouMNPOQe4IEnAPIkvGW6D5mVGJERBISBR-Db',
-    imageAlt: 'Sandbox forensic et analyse de mémoire Volatility',
-    tags: ['Volatility 3', 'Ghidra', 'Wireshark', 'YARA', 'CAPEv2', 'Procmon'],
+    imageAlt: 'Architecture VPN et topologie réseau GNS3',
+    tags: ['GNS3', 'IKEv2', 'IPsec', 'Wireshark', 'VPN', 'Routage'],
     metrics: [
-      { label: 'Échantillons analysés', value: '120+' },
-      { label: 'IOCs extraits', value: '650+' },
-      { label: 'Règles YARA', value: '24 créées' }
+      { label: 'Protocole VPN', value: 'IKEv2/IPsec' },
+      { label: 'Environnement', value: 'GNS3 virtualisé' },
+      { label: 'Validation', value: 'Analyse PCAP' }
     ],
     architecture: [
-      'Segment réseau hermétique avec isolation VLAN et simulation de réseau INetSim',
-      'Analyse de dumps mémoire Windows avec Volatility 3 (recherche de malfind, dlllist, pslist)',
-      'Décompilation et rétro-ingénierie binaire sous Ghidra',
-      'Export automatique des IOCs au format STIX/TAXII vers plateforme Threat Intel MISP'
+      'Conception de la topologie réseau complète sous GNS3 (routeurs, pare-feu, clients distants)',
+      'Configuration du tunnel VPN IKEv2/IPsec entre le site distant et le réseau interne',
+      'Mise en place du routage pour l\'acheminement du trafic à travers le tunnel chiffré',
+      'Capture et analyse du trafic avec Wireshark pour valider le chiffrement et détecter d\'éventuelles fuites'
     ],
-    detectionRule: {
-      type: 'YARA',
-      title: 'Detect CobaltStrike Beacon Config in Process Memory',
-      code: `rule CobaltStrike_Beacon_Memory {
-  meta:
-    description = "Detects Cobalt Strike Beacon memory strings and reflection markers"
-    author = "Junias DFIR Lab"
-    date = "2024-05-12"
-  strings:
-    $s1 = "%s as %s\\\\%s: %d" ascii wide
-    $s2 = "ReflectiveLoader" ascii
-    $s3 = "beacon.dll" ascii
-    $s4 = "\\\\.\\pipe\\msagent_%x" ascii
-  condition:
-    2 of ($s*)
-}`
-    },
     githubUrl: 'https://github.com'
   },
   {
-    id: 'devsecops-pipeline-audit',
+    id: 'audit-owasp',
     code: 'PROJET_DELTA',
-    title: 'Pipeline CI/CD DevSecOps & Hardening Active Directory',
+    title: 'Audit de Sécurité Applicative OWASP Top 10',
     category: 'devsecops',
-    categoryLabel: 'DevSecOps',
-    date: '2024-Q3',
-    summary: 'Intégration d’outils SAST/DAST/SCA dans GitLab CI et audit de chemins d’attaque Active Directory via BloodHound.',
-    description: 'Automatisation de la sécurité dès la phase de build. Intégration de Trivy pour le scan de conteneurs, Semgrep pour le SAST, et Gitleaks pour la détection de secrets. Audit et remédiation des délégations ACL et Kerberoasting sur un domaine AD de test.',
+    categoryLabel: 'Audit & DevSecOps',
+    date: '2025-Q2',
+    summary: "Qualification des vulnérabilités d'une application web selon l'OWASP Top 10 avec analyse SAST via SonarQube et plan de remédiation priorisé.",
+    description: "Réalisation d'un audit de sécurité applicative complet sur une application web. Utilisation d'outils SAST (analyse statique du code source) et DAST pour identifier les vulnérabilités selon le référentiel OWASP Top 10. Rédaction d'un rapport détaillé avec classification par criticité et plan de remédiation priorisé.",
     imageUrl: 'https://lh3.googleusercontent.com/aida-public/AB6AXuA5RDQO7D68kD4gsf0RWLr0El5vfipx5O5Ej3IgeWRWAWrl8yLkBVFednJ6S-NcC56m8jUH2DUAMG7rbWKzbg2TN96sogkaicgQDcQqpQHwDUU7AHuQguxVHYymaY5AQVJnyMAq5mt3x3YCEsDj6sRLK1AyDO7QX9dEhB9m1VUvN7zIVU1hAuYY0QvI0_mWwd-Ie4BkZVjI-1xy3q-jouMNPOQe4IEnAPIkvGW6D5mVGJERBISBR-Db',
-    imageAlt: 'Pipeline DevSecOps et graphe BloodHound Active Directory',
-    tags: ['GitLab CI', 'Trivy', 'Semgrep', 'BloodHound', 'Docker', 'SonarQube'],
+    imageAlt: 'Rapport d\'audit OWASP et tableau SonarQube',
+    tags: ['OWASP', 'SAST', 'DAST', 'SonarQube', 'Sécurité applicative', 'Remédiation'],
     metrics: [
-      { label: 'Vulnérabilités bloquées', value: '100% High/Crit' },
-      { label: 'Temps de build security', value: '< 45s' },
-      { label: 'Postures CIS', value: 'Niveau 2' }
+      { label: 'Vulnérabilités identifiées', value: '12 failles' },
+      { label: 'Criticité haute corrigées', value: '3 failles' },
+      { label: 'Couverture OWASP', value: 'Top 10 complet' }
     ],
     architecture: [
-      'GitLab CI Pipeline sécurisé avec stages SAST, SCA, Container Scan et Secret Detection',
-      'Politiques de blocage de merge request si vulnérabilité CVSS >= 7.0 identifiée',
-      'Audit de domaine Active Directory avec BloodHound & PingCastle pour identifier les abus de permissions (DCSync, AS-REP roasting)',
-      'Déploiement de GPO de durcissement basées sur les benchmarks CIS Windows Server 2022'
+      'Analyse statique du code source (SAST) avec SonarQube pour détecter les failles dès la compilation',
+      'Tests dynamiques (DAST) sur l\'application déployée pour identifier les vulnérabilités exploitables',
+      'Classification des vulnérabilités selon le référentiel OWASP Top 10 et scoring CVSS',
+      'Rédaction du rapport d\'audit et du plan de remédiation priorisé par criticité'
     ],
     githubUrl: 'https://github.com'
   }
@@ -187,114 +159,114 @@ tags:
 
 export const LABS_DATA: LabEntry[] = [
   {
-    id: 'cert-ejptv2',
+    id: 'defhack-2026',
     dateTag: 'RÉCENT',
     statusType: 'recent',
-    title: 'Certification eJPTv2 (eLearnSecurity)',
-    platform: 'INE Security',
-    category: 'Offensif / Network & Web Pentest',
-    description: 'Validation pratique et rigoureuse des compétences en tests d’intrusion réseaux d’entreprise, pivotage multi-sous-réseaux, attaques Active Directory et exploitation d’applications web (OWASP Top 10).',
-    technologies: ['Metasploit', 'Nmap', 'Burp Suite Pro', 'John/Hashcat', 'Chisel', 'BloodHound'],
+    title: 'DefHack 2026 — Challenge Cyberdéfense COMCYBER',
+    platform: 'COMCYBER / Ministère des Armées',
+    category: 'CTF Cyberdéfense',
+    description: 'Participation au challenge national DefHack 2026 organisé par le Commandement de la Cyberdéfense (COMCYBER). Épreuves couvrant la détection d\'intrusion, l\'analyse forensique, la cryptographie et la défense de systèmes en conditions réalistes.',
+    technologies: ['Forensics', 'Network Analysis', 'Cryptographie', 'Défense système', 'OSINT'],
     difficulty: 'Hard',
-    scoreOrCert: 'Obtenue (Score 92%)',
-    writeupSnippet: 'Examen pratique de 48h en boîte noire : découverte de machines distantes, élévation de privilèges Linux/Windows, exploitation de CMS vulnérable, contournement de pare-feu avec tunneling SSH et pivoting Chisel.'
+    scoreOrCert: 'Participant',
+    writeupSnippet: 'Compétition nationale mêlant épreuves individuelles et en équipe sur des scénarios réalistes de cyberdéfense. Mise en pratique des compétences en analyse de logs, détection d\'intrusion et réponse aux incidents dans un cadre compétitif encadré par le Ministère des Armées.'
   },
   {
-    id: 'thm-wreath',
-    dateTag: 'IL Y A 3 MOIS',
+    id: 'htb-labs',
+    dateTag: 'EN COURS',
+    statusType: 'recent',
+    title: 'Hack The Box — Machines & Challenges',
+    platform: 'Hack The Box',
+    category: 'Pentest & Exploitation',
+    description: 'Pratique régulière sur la plateforme Hack The Box : compromission de machines virtuelles, escalade de privilèges Linux et Windows, exploitation de services vulnérables et challenges techniques.',
+    technologies: ['Nmap', 'Burp Suite', 'Metasploit', 'Linux Privesc', 'Windows Privesc'],
+    difficulty: 'Medium',
+    scoreOrCert: 'Profil actif',
+    writeupSnippet: 'Résolution de machines de difficulté variable : reconnaissance réseau avec Nmap, exploitation de services, escalade de privilèges et post-exploitation. Focus sur les environnements Active Directory et les applications web vulnérables.'
+  },
+  {
+    id: 'rootme-challenges',
+    dateTag: 'EN COURS',
     statusType: 'past',
-    title: 'TryHackMe - Réseau Wreath (Pivoting & C2)',
+    title: 'Root-Me — Challenges de Sécurité Informatique',
+    platform: 'Root-Me',
+    category: 'Sécurité Web, Réseau & Forensic',
+    description: 'Résolution de challenges variés sur Root-Me couvrant la sécurité web, l\'analyse réseau, la cryptographie et le forensic. Montée en compétences progressive sur les différentes catégories de la plateforme.',
+    technologies: ['Wireshark', 'Burp Suite', 'Python', 'Forensics', 'Cryptographie'],
+    difficulty: 'Medium',
+    scoreOrCert: 'Profil actif',
+    writeupSnippet: 'Épreuves de sécurité web (injections SQL, XSS, SSRF), analyse réseau (captures PCAP), cryptographie (RSA, AES, hachage) et forensic (analyse de fichiers, stéganographie, artefacts système).'
+  },
+  {
+    id: 'thm-practice',
+    dateTag: 'CONTINU',
+    statusType: 'past',
+    title: 'TryHackMe — Parcours de Formation Offensive & Défensive',
     platform: 'TryHackMe',
-    category: 'Pivoting Réseau & C2 Frameworks',
-    description: 'Compromission complète d’un réseau d’entreprise simulé composé de serveurs Web publics, bastions Linux et contrôleurs de domaine Windows isolés.',
-    technologies: ['Empire C2', 'Proxychains', 'Socat', 'Impacket', 'Mimikatz'],
-    difficulty: 'Hard',
-    scoreOrCert: '100% Complet',
-    writeupSnippet: 'Attaque initiale sur un service web non patché, mise en place d’un agent C2 Empire persistant, création de tunnels socat pour router le trafic vers le LAN interne, exfiltration de hashes NTLM et attaque Pass-the-Hash.'
-  },
-  {
-    id: 'rootme-forensic',
-    dateTag: 'IL Y A 5 MOIS',
-    statusType: 'past',
-    title: 'Root-Me - Investigation Numérique & Forensic',
-    platform: 'Root-Me Pro',
-    category: 'DFIR & Analyse de Traces',
-    description: 'Résolution d’épreuves avancées d’analyse de dumps mémoire RAM, captures réseau PCAP corrompues, artefacts NTFS ($MFT, USN Journal) et logs d’événements Windows EVTX.',
-    technologies: ['Volatility 3', 'Wireshark', 'FTK Imager', 'EvtxECmd', 'EZ Tools'],
-    difficulty: 'Medium',
-    scoreOrCert: 'Top 5% National',
-    writeupSnippet: 'Reconstitution de la chronologie complète d’une intrusion APT : détection de l’exécution malveillante via Shimcache, identification de l’IP attaquante dans les flux réseau chiffrés et récupération du payload stéganographié.'
-  },
-  {
-    id: 'aws-cloud-lab',
-    dateTag: 'IL Y A 7 MOIS',
-    statusType: 'past',
-    title: 'AWS Security Workshop - Incident Response in Cloud',
-    platform: 'AWS Hands-On Labs',
-    category: 'Cloud Threat Detection & IAM Governance',
-    description: 'Simulation d’attaques d’escalade de privilèges sur compte AWS (ShadowAdmin, assume-role chains), détection via GuardDuty et analyse forensic de snapshots d’instances compromises.',
-    technologies: ['AWS CLI', 'CloudTrail', 'GuardDuty', 'Security Hub', 'Athena'],
-    difficulty: 'Medium',
-    scoreOrCert: 'Certificat de Complétion',
-    writeupSnippet: 'Requêtes SQL sous Amazon Athena sur les journaux CloudTrail pour tracer les appels API non autorisés, verrouillage immédiat des Security Groups et rotation automatique des clés d’accès via Lambda.'
+    category: 'Formation Continue Cybersécurité',
+    description: 'Parcours de formation et labs pratiques sur TryHackMe pour approfondir les techniques offensives et défensives. Rooms couvrant le pentest réseau, la sécurité web, l\'analyse de logs et la réponse aux incidents.',
+    technologies: ['Nmap', 'Wireshark', 'Metasploit', 'Burp Suite', 'Linux'],
+    difficulty: 'Easy',
+    scoreOrCert: 'Parcours en cours',
+    writeupSnippet: 'Rooms thématiques sur la reconnaissance réseau, l\'exploitation de vulnérabilités connues, l\'analyse de journaux Windows (EVTX, Sysmon) et la configuration de règles de détection. Apprentissage progressif des méthodologies Red Team et Blue Team.'
   }
 ];
 
 export const SKILLS_CATEGORIES: SkillCategory[] = [
   {
-    id: 'detection-reponse',
-    title: 'Détection & Réponse (Blue)',
+    id: 'systemes-infra',
+    title: 'Systèmes & Infrastructure',
     iconName: 'shield',
     type: 'blue',
     skills: [
-      { name: 'Splunk / Sentinel', level: 'avancé', tag: 'SIEM' },
-      { name: 'ELK Stack / Wazuh', level: 'expert', tag: 'Log Analytics' },
-      { name: 'Wireshark / Zeek', level: 'expert', tag: 'Packet Analysis' },
-      { name: 'Suricata / Snort', level: 'avancé', tag: 'NIDS' },
-      { name: 'Sigma / Yara Rules', level: 'expert', tag: 'Detection Engineering' },
-      { name: 'KQL / SPL Query', level: 'avancé', tag: 'Hunting' }
+      { name: 'Windows Server & Active Directory', level: 'avancé', tag: 'Systèmes' },
+      { name: 'Linux (Debian, Ubuntu)', level: 'avancé', tag: 'Systèmes' },
+      { name: 'VMware / VirtualBox', level: 'avancé', tag: 'Virtualisation' },
+      { name: 'WSUS / GLPI', level: 'intermédiaire', tag: 'Gestion de parc' },
+      { name: 'Docker', level: 'intermédiaire', tag: 'Conteneurs' },
+      { name: 'CI/CD', level: 'intermédiaire', tag: 'Automation' }
     ]
   },
   {
-    id: 'infra-cloud',
-    title: 'Infra & Cloud Security',
+    id: 'reseau-securite',
+    title: 'Réseau & Sécurité Réseau',
     iconName: 'cloud',
     type: 'infra',
     skills: [
-      { name: 'AWS Security (IAM/GuardDuty)', level: 'avancé', tag: 'Cloud Sec' },
-      { name: 'Linux Internals & Hardening', level: 'expert', tag: 'OS Security' },
-      { name: 'Active Directory / Windows', level: 'avancé', tag: 'Enterprise' },
-      { name: 'Docker / Kubernetes', level: 'avancé', tag: 'Containers' },
-      { name: 'Terraform (IaC Sec)', level: 'intermédiaire', tag: 'Automation' },
-      { name: 'VPN / Firewalling', level: 'avancé', tag: 'Network' }
+      { name: 'VLAN / Routage', level: 'avancé', tag: 'Réseau' },
+      { name: 'VPN IKEv2/IPsec', level: 'avancé', tag: 'Accès distant' },
+      { name: 'pfSense', level: 'avancé', tag: 'Pare-feu' },
+      { name: 'Fortigate', level: 'intermédiaire', tag: 'Pare-feu' },
+      { name: 'Wireshark', level: 'avancé', tag: 'Analyse réseau' },
+      { name: 'Snort / Suricata', level: 'intermédiaire', tag: 'IDS/IPS' }
     ]
   },
   {
-    id: 'devsecops',
-    title: 'DevSecOps & Code',
+    id: 'cybersecurite-soc',
+    title: 'Cybersécurité & SOC',
     iconName: 'terminal',
     type: 'devsec',
     skills: [
-      { name: 'Python (Scripting & Automation)', level: 'expert', tag: 'Coding' },
-      { name: 'Bash / PowerShell', level: 'expert', tag: 'Scripting' },
-      { name: 'GitLab CI / GitHub Actions', level: 'avancé', tag: 'CI/CD' },
-      { name: 'Trivy / Semgrep', level: 'avancé', tag: 'SAST/SCA' },
-      { name: 'SonarQube / DefectDojo', level: 'intermédiaire', tag: 'Vulnerability Mgmt' },
-      { name: 'Ansible', level: 'intermédiaire', tag: 'Config Mgmt' }
+      { name: 'SIEM / ELK / EDR', level: 'intermédiaire', tag: 'Détection' },
+      { name: 'EBIOS RM / ISO 27001', level: 'avancé', tag: 'Gouvernance' },
+      { name: 'OWASP / SAST / DAST', level: 'intermédiaire', tag: 'AppSec' },
+      { name: 'SonarQube', level: 'intermédiaire', tag: 'Qualité code' },
+      { name: 'KQL / Analyse de logs', level: 'intermédiaire', tag: 'Hunting' },
+      { name: 'RGPD / Conformité', level: 'intermédiaire', tag: 'Réglementation' }
     ]
   },
   {
-    id: 'gouvernance-offensif',
-    title: 'Gouvernance & Offensif',
+    id: 'dev-automatisation',
+    title: 'Développement & Automatisation',
     iconName: 'swords',
     type: 'gov',
     skills: [
-      { name: 'MITRE ATT&CK Framework', level: 'expert', tag: 'Framework' },
-      { name: 'ISO 27001 / CIS Controls', level: 'avancé', tag: 'Standards' },
-      { name: 'NIST CSF & RGPD', level: 'avancé', tag: 'Compliance' },
-      { name: 'Pentest Web & Réseau (OWASP)', level: 'avancé', tag: 'Red Team' },
-      { name: 'Metasploit & Burp Suite', level: 'avancé', tag: 'Offensive' },
-      { name: 'OSINT & Threat Intel', level: 'avancé', tag: 'CTI' }
+      { name: 'Python', level: 'avancé', tag: 'Scripting' },
+      { name: 'Bash', level: 'avancé', tag: 'Scripting' },
+      { name: 'PowerShell', level: 'intermédiaire', tag: 'Scripting' },
+      { name: 'Java', level: 'intermédiaire', tag: 'Développement' },
+      { name: 'MySQL / PostgreSQL', level: 'intermédiaire', tag: 'Bases de données' },
+      { name: 'GNS3 / Packet Tracer', level: 'avancé', tag: 'Simulation' }
     ]
   }
 ];
@@ -327,7 +299,7 @@ export const INITIAL_THREAT_LOGS: ThreatLog[] = [
     sourceIp: '10.0.2.88',
     destIp: '10.0.0.5:389',
     protocol: 'LDAP',
-    signature: 'ANOMALY Active Directory Excessive BloodHound Enumeration Queries',
+    signature: 'ANOMALY Active Directory Excessive Enumeration Queries',
     action: 'ALERT'
   },
   {

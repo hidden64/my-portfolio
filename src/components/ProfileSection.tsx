@@ -21,7 +21,7 @@ export const ProfileSection: React.FC = () => {
                 {profile.operationalProfile}
           </p>
           <p>
-            Passionné par l'investigation numérique et la réponse aux incidents. Mon approche combine une compréhension profonde des mécanismes d'attaque avec une rigueur d'ingénierie pour durcir les systèmes d'information. J'évolue continuellement à travers des CTF et des environnements de lab.
+            Passionné par la sécurité informatique, je m'entraîne régulièrement sur des plateformes comme Hack The Box et Root-Me, et j'ai participé au DefHack 2026 du COMCYBER. Mon objectif : mettre cette polyvalence systèmes, réseaux et cybersécurité au service d'une équipe à taille humaine.
           </p>
         </div>
 
@@ -30,32 +30,32 @@ export const ProfileSection: React.FC = () => {
           <div className="bg-[#161d18] border border-[#3c4a41] p-3 rounded flex items-start gap-3 hover:border-[#61f9b1] transition-colors">
             <ShieldCheck className="w-5 h-5 text-[#61f9b1] shrink-0 mt-0.5" />
             <div>
-              <div className="font-mono text-xs font-bold text-[#dce5dc]">Défense Active &amp; SIEM</div>
-              <div className="font-body text-xs text-[#859489]">Corrélation de flux Sysmon, EVTX, CloudTrail et alertes NIDS Suricata.</div>
+              <div className="font-mono text-xs font-bold text-[#dce5dc]">Administration Systèmes</div>
+              <div className="font-body text-xs text-[#859489]">Windows Server, Linux, Active Directory, VMware, GLPI et gestion de parc.</div>
             </div>
           </div>
 
           <div className="bg-[#161d18] border border-[#3c4a41] p-3 rounded flex items-start gap-3 hover:border-[#5de6ff] transition-colors">
             <Terminal className="w-5 h-5 text-[#5de6ff] shrink-0 mt-0.5" />
             <div>
-              <div className="font-mono text-xs font-bold text-[#dce5dc]">Investigation DFIR</div>
-              <div className="font-body text-xs text-[#859489]">Analyse de dumps mémoire Volatility, extraction d'IOCs et signatures YARA.</div>
+              <div className="font-mono text-xs font-bold text-[#dce5dc]">Réseau &amp; Sécurité</div>
+              <div className="font-body text-xs text-[#859489]">VLAN, VPN IKEv2/IPsec, pfSense, Fortigate et analyse Wireshark.</div>
             </div>
           </div>
 
           <div className="bg-[#161d18] border border-[#3c4a41] p-3 rounded flex items-start gap-3 hover:border-[#5de6ff] transition-colors">
             <Award className="w-5 h-5 text-[#ffd8b6] shrink-0 mt-0.5" />
             <div>
-              <div className="font-mono text-xs font-bold text-[#dce5dc]">Sécurité Cloud AWS</div>
-              <div className="font-body text-xs text-[#859489]">Durcissement IAM, surveillance GuardDuty et remédiation serverless.</div>
+              <div className="font-mono text-xs font-bold text-[#dce5dc]">Cybersécurité &amp; Gouvernance</div>
+              <div className="font-body text-xs text-[#859489]">EBIOS RM, ISO 27001, OWASP, SIEM, audit de sécurité et conformité RGPD.</div>
             </div>
           </div>
 
           <div className="bg-[#161d18] border border-[#3c4a41] p-3 rounded flex items-start gap-3 hover:border-[#61f9b1] transition-colors">
             <UserCheck className="w-5 h-5 text-[#61f9b1] shrink-0 mt-0.5" />
             <div>
-              <div className="font-mono text-xs font-bold text-[#dce5dc]">DevSecOps &amp; CI/CD</div>
-              <div className="font-body text-xs text-[#859489]">Intégration SAST/SCA automatisée avec Trivy, Semgrep et GitLab CI.</div>
+              <div className="font-mono text-xs font-bold text-[#dce5dc]">Automatisation &amp; Scripting</div>
+              <div className="font-body text-xs text-[#859489]">Python, Bash, PowerShell, Docker et pipelines CI/CD.</div>
             </div>
           </div>
         </div>
@@ -101,7 +101,7 @@ export const ProfileSection: React.FC = () => {
                   {profile.name}
             </span>
             <span className="font-mono text-xs text-[#61f9b1] font-semibold mt-0.5">
-              SOC Analyst / SecOps
+              Admin Sys & Réseaux / Cybersécurité
             </span>
             <div className="flex items-center gap-1 text-[11px] font-mono text-[#bbcabe] mt-1">
               <MapPin className="w-3 h-3 text-[#5de6ff]" />

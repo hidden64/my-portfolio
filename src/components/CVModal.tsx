@@ -22,7 +22,7 @@ export const CVModal: React.FC<CVModalProps> = ({ isOpen, onClose }) => {
 
   const handleCopyText = () => {
     const textCV = `
-JUNIAS - ANALYSTE SOC & CYBERSÉCURITÉ CLOUD
+JUNIAS KOUTI - SYSTÈMES, RÉSEAUX & CYBERSÉCURITÉ
 Statut: ${PROFILE_DATA.status}
 Email: ${PROFILE_DATA.email} | Localisation: ${PROFILE_DATA.location}
 Spécialisation: ${PROFILE_DATA.specialisation}
@@ -30,14 +30,14 @@ Spécialisation: ${PROFILE_DATA.specialisation}
 FORMATION:
 • ${PROFILE_DATA.formation}
 
-CERTIFICATIONS:
+PLATEFORMES & CTF:
 ${PROFILE_DATA.certifications.map(c => `• ${c.name} (${c.status})`).join('\n')}
 
 COMPÉTENCES CLÉS:
-• SIEM & Logs: Splunk, ELK Stack, Wazuh, Sysmon, Sigma Rules, KQL
-• Cloud & Infra: AWS Security (GuardDuty, IAM, CloudTrail), Linux, Active Directory, Docker
-• DFIR: Volatility 3, Wireshark, YARA, Analyse Malware
-• DevSecOps: Python, Bash, GitLab CI, Trivy, Semgrep
+• Systèmes: Windows Server, Linux, Active Directory, VMware, GLPI
+• Réseau: VLAN, VPN IKEv2/IPsec, pfSense, Fortigate, Wireshark
+• Cybersécurité: SIEM, EBIOS RM, ISO 27001, OWASP, SonarQube
+• Dev & Automatisation: Python, Bash, PowerShell, Docker, CI/CD
 
 PROJETS MAJEURS:
 ${PROJECTS_DATA.map(p => `• [${p.date}] ${p.title}\n  ${p.summary}`).join('\n')}
@@ -93,7 +93,7 @@ ${PROJECTS_DATA.map(p => `• [${p.date}] ${p.title}\n  ${p.summary}`).join('\n'
             <div>
               <h1 className="font-headline text-3xl font-bold text-[#61f9b1]">Junias</h1>
               <div className="font-mono text-sm text-[#5de6ff] font-semibold mt-1">
-                Analyste SOC &amp; Ingénieur Sécurité Cloud (Alternance)
+                Admin Systèmes &amp; Réseaux | Cybersécurité (Alternance)
               </div>
               <div className="font-body text-xs text-[#bbcabe] mt-2 max-w-lg leading-relaxed">
                 {PROFILE_DATA.bio}
@@ -117,7 +117,7 @@ ${PROJECTS_DATA.map(p => `• [${p.date}] ${p.title}\n  ${p.summary}`).join('\n'
               <div className="bg-[#161d18] border border-[#3c4a41] p-3 rounded space-y-1">
                 <div className="font-mono text-xs font-bold text-[#dce5dc]">{PROFILE_DATA.formation}</div>
                 <div className="font-body text-xs text-[#5de6ff]">Spécialisation : {PROFILE_DATA.specialisation}</div>
-                <div className="font-body text-xs text-[#859489]">Architecture de défense réseau, analyse forensique et sécurité cloud.</div>
+                <div className="font-body text-xs text-[#859489]">Administration systèmes et réseaux, cybersécurité et gouvernance.</div>
               </div>
             </div>
 
@@ -145,15 +145,15 @@ ${PROJECTS_DATA.map(p => `• [${p.date}] ${p.title}\n  ${p.summary}`).join('\n'
             </h2>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 font-mono text-xs">
               <div className="bg-[#161d18] border border-[#3c4a41] p-3 rounded space-y-1.5">
-                <div className="text-[#5de6ff] font-bold">SIEM, SOC &amp; DFIR</div>
+                <div className="text-[#5de6ff] font-bold">Systèmes &amp; Réseau</div>
                 <div className="text-[#bbcabe] text-[11px] leading-relaxed">
-                  Splunk, Wazuh, ELK Stack, Sysmon, Suricata, Wireshark, Volatility 3, Règles Sigma/YARA, KQL, Threat Hunting.
+                  Windows Server, Linux, Active Directory, VMware, GLPI, VLAN, VPN IKEv2/IPsec, pfSense, Fortigate, Wireshark.
                 </div>
               </div>
               <div className="bg-[#161d18] border border-[#3c4a41] p-3 rounded space-y-1.5">
-                <div className="text-[#5de6ff] font-bold">Cloud, Infra &amp; DevSecOps</div>
+                <div className="text-[#5de6ff] font-bold">Cybersécurité &amp; Développement</div>
                 <div className="text-[#bbcabe] text-[11px] leading-relaxed">
-                  AWS Security (GuardDuty, IAM, EventBridge), Active Directory Hardening, Docker/K8s, Linux, Python, Bash, GitLab CI, Trivy.
+                  SIEM, ELK, Snort, EBIOS RM, ISO 27001, OWASP, SonarQube, Python, Bash, PowerShell, Docker, CI/CD.
                 </div>
               </div>
             </div>

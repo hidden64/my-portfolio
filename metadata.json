@@ -1,6 +1,6 @@
 {
-  "name": "Junias - SOC Analyst Portfolio",
-  "description": "Portfolio technique d'Analyste SOC & Sécurité Cloud avec émulateur de terminal interactif, matrice de compétences DFIR/SIEM, archives projets et journal de labs.",
+  "name": "Junias KOUTI - Portfolio Systèmes, Réseaux & Cybersécurité",
+  "description": "Portfolio technique d'Administrateur Systèmes & Réseaux / Cybersécurité avec émulateur de terminal interactif, matrice de compétences, archives projets et journal de labs CTF.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

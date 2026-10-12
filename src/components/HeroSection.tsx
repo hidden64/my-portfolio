@@ -59,10 +59,10 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         out = (
           <div className="text-xs space-y-1 font-mono">
             <div className="text-[#61f9b1] font-bold">AVAILABLE COMMANDS:</div>
-            <div><span className="text-[#5de6ff]">whoami</span> - Afficher les détails de l'analyste SOC</div>
+            <div><span className="text-[#5de6ff]">whoami</span> - Afficher le profil de Junias</div>
             <div><span className="text-[#5de6ff]">nmap</span> - Relancer une analyse de ports réseau simulée</div>
-            <div><span className="text-[#5de6ff]">siem</span> - Afficher l'état du cluster de détection de menaces</div>
-            <div><span className="text-[#5de6ff]">skills</span> - Lister les compétences clés en cybersécurité</div>
+            <div><span className="text-[#5de6ff]">infra</span> - Afficher l'expérience et les projets</div>
+            <div><span className="text-[#5de6ff]">skills</span> - Lister les compétences techniques</div>
             <div><span className="text-[#5de6ff]">flag</span> - Tenter d'extraire le flag CTF</div>
             <div><span className="text-[#5de6ff]">clear</span> - Nettoyer la console</div>
           </div>
@@ -73,9 +73,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         out = (
           <div className="text-xs space-y-1 text-[#dce5dc] font-mono">
             <div className="text-[#61f9b1] font-semibold">&gt; Utilisateur: {PROFILE_DATA.name} (SYS_ID: {PROFILE_DATA.sysId})</div>
-            <div>Role: SOC Analyst & Cloud Security Specialist</div>
+            <div>Role: Admin Systèmes & Réseaux | Cybersécurité</div>
             <div>Status: <span className="text-[#61f9b1] font-bold">{profile.status}</span></div>
-            <div>Specialization: {profile.specialisation}</div>
+            <div>Formation: {profile.formation}</div>
           </div>
         );
         break;
@@ -97,14 +97,14 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         setTimeout(() => setIsScanning(false), 800);
         break;
 
-      case 'siem':
+      case 'infra':
         out = (
           <div className="text-xs space-y-1 font-mono text-[#dce5dc]">
-            <div className="text-[#61f9b1] font-bold">ETAT DU SOC / SIEM :</div>
-            <div>• Cluster Status: <span className="text-[#61f9b1]">HEALTHY (GREEN)</span></div>
-            <div>• Ingestion Rate: <span className="text-[#5de6ff]">4,820 events/sec</span></div>
-            <div>• Sigma Rules Active: <span className="text-[#61f9b1]">38 règles corrélées</span></div>
-            <div>• Dernière alerte bloquée: <span className="text-[#ffb4ab]">CobaltStrike C2 (IP: 194.26.29.112)</span></div>
+            <div className="text-[#61f9b1] font-bold">INFRASTRUCTURE & EXPÉRIENCE :</div>
+            <div>• Stage SOC: <span className="text-[#61f9b1]">Plateforme SOC déployée (Docker, Python)</span></div>
+            <div>• IT Multi-sites: <span className="text-[#5de6ff]">26 stations-service administrées</span></div>
+            <div>• Projets sécu: <span className="text-[#61f9b1]">PSSI EBIOS RM, VPN IKEv2, Audit OWASP</span></div>
+            <div>• CTF: <span className="text-[#ffd8b6]">DefHack 2026 COMCYBER, HTB, Root-Me</span></div>
           </div>
         );
         break;
@@ -113,9 +113,9 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         out = (
           <div className="text-xs space-y-1 font-mono text-[#bbcabe]">
             <div className="text-[#61f9b1] font-bold">STACK TECHNIQUE PRINCIPALE :</div>
-            <div>• SIEM & Logs : Splunk, Wazuh, ELK Stack, KQL, Sysmon</div>
-            <div>• DFIR : Wireshark, Volatility 3, YARA, CAPEv2, Ghidra</div>
-            <div>• Cloud & DevSecOps : AWS Security, Docker, Python, Bash, CI/CD</div>
+            <div>• Systèmes : Windows Server, Linux, Active Directory, VMware</div>
+            <div>• Réseau : VLAN, VPN IKEv2/IPsec, pfSense, Fortigate, Wireshark</div>
+            <div>• Sécu & Dev : SIEM, EBIOS RM, OWASP, Python, Bash, Docker</div>
           </div>
         );
         break;
@@ -124,7 +124,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
       case 'cat flag.txt':
         out = (
           <div className="text-xs font-mono text-[#61f9b1] bg-[#1a211c] p-2 border border-[#61f9b1]/40 rounded">
-            FLAG&#123;Junias_SOC_CloudSec_Alternance_2026&#125;
+            FLAG&#123;Junias_SysAdmin_Cyber_Alternance_2026&#125;
             <div className="text-[10px] text-[#bbcabe] mt-1">Bravo ! Prêt à sécuriser vos infrastructures. Contactez-moi !</div>
           </div>
         );
@@ -170,7 +170,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </span>
           <span className="flex items-center gap-1.5 font-mono text-xs text-[#bbcabe]">
             <Shield className="w-3.5 h-3.5 text-[#61f9b1]" />
-            <span>SOC Analyst Level 1 / Level 2</span>
+            <span>{t.hero.level}</span>
           </span>
         </div>
 
@@ -203,21 +203,6 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
           </button>
         </div>
 
-        {/* Quick telemetry metrics */}
-        <div className="grid grid-cols-3 gap-3 pt-4 border-t border-[#3c4a41]/40 max-w-lg">
-          <div className="flex flex-col">
-            <span className="font-mono text-lg font-bold text-[#61f9b1]">{PROFILE_DATA.stats.ctfSolved}</span>
-            <span className="font-mono text-[10px] text-[#859489] uppercase">{t.hero.ctf}</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-mono text-lg font-bold text-[#5de6ff]">{PROFILE_DATA.stats.siemRules}</span>
-            <span className="font-mono text-[10px] text-[#859489] uppercase">{t.hero.rules}</span>
-          </div>
-          <div className="flex flex-col">
-            <span className="font-mono text-lg font-bold text-[#ffd8b6]">{PROFILE_DATA.stats.uptime}</span>
-            <span className="font-mono text-[10px] text-[#859489] uppercase">{t.hero.uptime}</span>
-          </div>
-        </div>
       </div>
 
       {/* Right: Live Interactive Terminal Simulation */}
@@ -269,7 +254,7 @@ export const HeroSection: React.FC<HeroSectionProps> = ({
         {/* Quick Command Pills for quick user interaction */}
         <div className="flex items-center gap-1.5 pt-2 border-t border-[#3c4a41]/50 overflow-x-auto pb-1 text-[10px] font-mono">
             <span className="text-[#859489] text-[9px] uppercase tracking-wider shrink-0">{t.hero.quick}</span>
-          {['help', 'whoami', 'siem', 'skills', 'flag', 'clear'].map((cmd) => (
+          {['help', 'whoami', 'infra', 'skills', 'flag', 'clear'].map((cmd) => (
             <button
               key={cmd}
               onClick={() => handleCommand(cmd)}

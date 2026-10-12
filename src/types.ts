@@ -2,7 +2,7 @@ export interface Project {
   id: string;
   code: string;
   title: string;
-  category: 'siem' | 'cloud' | 'dfir' | 'devsecops';
+  category: 'siem' | 'governance' | 'network' | 'devsecops';
   categoryLabel: string;
   date: string;
   summary: string;

@@ -10,7 +10,7 @@ interface ProjectsSectionProps {
 export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProject }) => {
   const { language, t } = useLanguage();
   const projects = getLocalizedProjects(language);
-  const [filter, setFilter] = useState<'all' | 'siem' | 'cloud' | 'dfir' | 'devsecops'>('all');
+  const [filter, setFilter] = useState<'all' | 'siem' | 'governance' | 'network' | 'devsecops'>('all');
 
   const filteredProjects = projects.filter((project) => {
     if (filter === 'all') return true;
@@ -33,8 +33,8 @@ export const ProjectsSection: React.FC<ProjectsSectionProps> = ({ onSelectProjec
           {[
             { id: 'all', label: t.projects.all },
             { id: 'siem', label: 'SIEM & SOC' },
-            { id: 'cloud', label: t.projects.cloud },
-            { id: 'dfir', label: t.projects.dfir },
+            { id: 'governance', label: t.projects.governance },
+            { id: 'network', label: t.projects.network },
             { id: 'devsecops', label: 'DevSecOps' }
           ].map((tab) => (
             <button
