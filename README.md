@@ -1,10 +1,10 @@
 # ~/junias - SOC Analyst & Cloud Security Portfolio
 
-Portfolio technique d'Analyste SOC (Security Operations Center) et Spécialiste Sécurité Cloud (SIEM, DFIR, DevSecOps, Blue/Red Team), intégrant un émulateur de terminal interactif, un moniteur de télémétrie IDS en direct, une matrice de compétences MITRE/SOC et un journal de labs.
+Portfolio technique d'Analyste SOC (Security Operations Center) et Spécialiste Sécurité Cloud (SIEM, DFIR, DevSecOps, Blue/Red Team), avec un émulateur de terminal interactif, un moniteur de télémétrie IDS en direct, une matrice de compétences MITRE/SOC et un journal de labs.
 
 ---
 
-## 🛠️ Stack Technique
+## Stack Technique
 
 - **Framework** : React 19 + TypeScript
 - **Bundler / Serveur Dev** : Vite 6
@@ -14,15 +14,15 @@ Portfolio technique d'Analyste SOC (Security Operations Center) et Spécialiste 
 
 ---
 
-## 📋 Prérequis
+## Prérequis
 
-Avant de commencer, assurez-vous d'avoir installé sur votre machine :
+Avant de commencer, vérifiez que vous avez installé :
 - **Node.js** (version 18.x ou supérieure recommandée)
 - **npm** (inclus avec Node.js) ou **pnpm** / **yarn**
 
 ---
 
-## 🚀 Démarrage Rapide en Local
+## Démarrage Rapide en Local
 
 ### 1. Cloner le dépôt
 
@@ -43,12 +43,11 @@ npm install
 npm run dev
 ```
 
-L'application sera accessible sur :
-👉 **http://localhost:3000** (ou sur le port indiqué dans votre terminal)
+L'application sera accessible sur **http://localhost:3000** (ou sur le port indiqué dans votre terminal).
 
 ---
 
-## 📜 Scripts Disponibles
+## Scripts Disponibles
 
 | Commande | Description |
 | :--- | :--- |
@@ -60,7 +59,7 @@ L'application sera accessible sur :
 
 ---
 
-## 📁 Structure du Projet
+## Structure du Projet
 
 ```text
 ├── index.html                  # Point d'entrée HTML & Polices Google Fonts
@@ -90,7 +89,7 @@ L'application sera accessible sur :
 
 ---
 
-## ⚙️ Personnalisation
+## Personnalisation
 
-Toutes les données du profil (nom, email, certifications, projets, règles de détection, liens sociaux) sont centralisées et modifiables dans :
+Toutes les données du profil (nom, email, certifications, projets, règles de détection, liens sociaux) sont centralisées dans :
 `/src/data/portfolioData.ts`
