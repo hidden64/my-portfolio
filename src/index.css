@@ -1,0 +1,122 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: 'Space Grotesk', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-cyber-bg: #0e1510;
+  --color-cyber-surface: #0e1510;
+  --color-cyber-surface-low: #161d18;
+  --color-cyber-surface-lowest: #09100b;
+  --color-cyber-surface-container: #1a211c;
+  --color-cyber-surface-high: #242c27;
+  --color-cyber-surface-highest: #2f3731;
+  --color-cyber-primary: #61f9b1;
+  --color-cyber-primary-fixed: #65fdb5;
+  --color-cyber-on-primary: #003822;
+  --color-cyber-secondary: #5de6ff;
+  --color-cyber-outline: #859489;
+  --color-cyber-outline-variant: #3c4a41;
+  --color-cyber-text: #dce5dc;
+  --color-cyber-text-muted: #bbcabe;
+  --color-cyber-error: #ffb4ab;
+  --color-cyber-tertiary: #ffb368;
+}
+
+/* Technical Background Grid */
+.tech-grid {
+  background-size: 24px 24px;
+  background-image: 
+    linear-gradient(to right, rgba(133, 148, 137, 0.07) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(133, 148, 137, 0.07) 1px, transparent 1px);
+}
+
+.tech-grid-dense {
+  background-size: 16px 16px;
+  background-image: 
+    linear-gradient(to right, rgba(97, 249, 177, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(97, 249, 177, 0.05) 1px, transparent 1px);
+}
+
+/* Pulsing dot animation */
+@keyframes pulse-dot {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(97, 249, 177, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px rgba(97, 249, 177, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(97, 249, 177, 0);
+  }
+}
+
+.status-dot {
+  animation: pulse-dot 2s infinite ease-in-out;
+}
+
+@keyframes pulse-red {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 100, 100, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 5px rgba(255, 100, 100, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(255, 100, 100, 0);
+  }
+}
+
+.status-dot-alert {
+  animation: pulse-red 1.5s infinite ease-in-out;
+}
+
+/* Terminal typing effect cursor */
+.terminal-cursor::after {
+  content: '█';
+  animation: blink 1s step-start infinite;
+  color: #61f9b1;
+  margin-left: 2px;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+/* CRT Scanlines Overlay */
+.scanlines-overlay {
+  background: linear-gradient(
+    rgba(18, 16, 16, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  ), linear-gradient(
+    90deg,
+    rgba(255, 0, 0, 0.03),
+    rgba(0, 255, 0, 0.01),
+    rgba(0, 0, 255, 0.03)
+  );
+  background-size: 100% 3px, 6px 100%;
+}
+
+/* Custom Scrollbar for Terminal & Logs */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #09100b;
+}
+::-webkit-scrollbar-thumb {
+  background: #242c27;
+  border-radius: 3px;
+  border: 1px solid #3c4a41;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3ddc97;
+}

@@ -1,0 +1,6 @@
+{
+  "name": "Junias - SOC Analyst Portfolio",
+  "description": "Portfolio technique d'Analyste SOC & Sécurité Cloud avec émulateur de terminal interactif, matrice de compétences DFIR/SIEM, archives projets et journal de labs.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
